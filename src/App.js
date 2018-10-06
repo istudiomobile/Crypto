@@ -1,27 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+
+const logo = styled.div`
+  font-size: 1.5em;
+`
+
+const ControlButton = styled.div`
+`
+
+const AppLayout = styled.div`
+  padding:40px;
+  display: grid;
+  grid-template-columns: 180px auto 100px 100px;
+`
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>Welcome to Crypto Dash</h1>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <AppLayout>
+        <logo>
+          CryptoDash
+        </logo>
+        <div></div>
+        <ControlButton>
+          Dashboard
+        </ControlButton>
+        <ControlButton>
+          Settings
+        </ControlButton>
+      </AppLayout>
     );
   }
 }
