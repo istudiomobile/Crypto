@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import styled, {css} from 'styled-components';
+import AppLayout from "./AppLayout";
 
 const Logo = styled.div`
   font-size: 1.5em;
-`
-
-const AppLayout = styled.div`
-  padding: 40px;
 `
 
 const ControlButton = styled.div`
