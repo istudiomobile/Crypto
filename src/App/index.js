@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <AppLayout>
         <AppProvider>
-          <AppBar></AppBar>
+          <AppBar/>
             <Content>
               <Settings />
             </Content>
