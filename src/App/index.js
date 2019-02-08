@@ -4,6 +4,7 @@ import styled, {css} from 'styled-components';
 import AppLayout from "./AppLayout";
 import AppBar from './AppBar';
 import Settings from '../Settings';
+import Content from '../Shared/Content';
 import { AppProvider } from './AppProvider';
 
 class App extends Component {
@@ -13,7 +14,9 @@ class App extends Component {
       <AppLayout>
         <AppProvider>
           <AppBar></AppBar>
-            <Settings />
+            <Content>
+              <Settings />
+            </Content>
         </AppProvider>
       </AppLayout>
     );
